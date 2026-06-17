@@ -5,7 +5,9 @@ import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import multer from 'multer';
+import dns from 'dns';
 
+dns.setServers(["1.1.1.1","8.8.8.8"]);
 /* ================= ROUTES ================= */
 import galleryRoutes from './routes/gallery.routes.js';
 import authRoutes from './routes/auth.routes.js';
