@@ -18,7 +18,7 @@ import facultyRoutes from './routes/faculty.routes.js';
 import libraryRoutes from './routes/library.routes.js';
 import uploadRoutes from './routes/upload.routes.js';
 import notesRoutes from './routes/notes.routes.js';
-import aiRoutes from './routes/ai.routes.js';
+// import aiRoutes from './routes/ai.routes.js';
 
 /* ================= UTILS ================= */
 import { seedFirstAdmin } from './utils/seedAdmin.js';
@@ -62,7 +62,7 @@ app.use('/api/library', libraryRoutes);
 app.use('/api/gallery', galleryRoutes);
 app.use('/api/upload', uploadRoutes);
 app.use('/api/notes', notesRoutes);
-app.use('/api/ai', aiRoutes);
+// app.use('/api/ai', aiRoutes);
 
 /* ================= ROOT ================= */
 app.get('/', (req, res) => {
