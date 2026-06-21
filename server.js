@@ -67,7 +67,7 @@ app.use('/api/notes', notesRoutes);
 /* ================= ROOT ================= */
 app.get('/', (req, res) => {
   res.send('🚀 API is running');
-});
+});       
 
 /* ================== Health API ==================== */
 app.get('/health', (req, res) => {
